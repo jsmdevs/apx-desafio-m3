@@ -1,0 +1,26 @@
+:root{
+    /* Colors */
+    --primary: #FFD953;
+    --secondary: #535AFF;
+    --negative: #FF5353;
+    --success: #69F05D;
+
+    --black: #000000;
+    --black-secondary: #2C2C2C;
+    --grey: #787878;
+    --grey-secondary: #B9B9B9;
+    --white-secondary: #DBDBDB;
+    --white:#FFFFFF;
+
+    /* Fonts */
+
+    --font-size-title: 48px;
+    --font-size-subtitle: 32px;
+    --font-size-large: 24px;
+    --font-size-body: 16px;
+    
+    --font-family-title: "Open Sans", sans-serif;
+    --font-family-subtitle: "Roboto", sans-serif;
+    --font-family-large: "Roboto", sans-serif;
+    --font-family-body: "Roboto", sans-serif;
+}

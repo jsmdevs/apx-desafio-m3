@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/variables.css">
+    <link rel="stylesheet" href="/assets/css/hamburgers.min.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Marce</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo-container">
+            <a href="#home"><img src="/assets/img/logo.svg" alt="Logotipo" class="logo"></a>
+        </div>
+        <nav class="nav">
+            <button class="nav__btn-hamburger hamburger hamburger--collapse" type="button">
+                <span class="nav__btn-box hamburger-box">
+                    <span class="nav__btn-inner hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="nav__background-opacity disable"></div>
+            <ul class="nav__links">
+                <li class="nav__link"><a href="#soy-marce">quien soy</a></li>
+                <li class="nav__link"><a href="#mis-servicios">servicios</a></li>
+                <li class="nav__link"><a href="#contacto">escribime</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="title banner__title">
+            <h1>Bienvenidxs a mi site</h1>
+        </div>
+        <img src="/assets/img/marce.png" alt="Foto de Marce" class="banner__img-marce">
+    </section>
+
+    <section id="soy-marce" class="soy-marce">
+        <div class="soy-marce__container">
+            <img src="/assets/icons/check.svg" alt="Icono check" class="soy-marce__icon">
+            <div class="soy-marce__text-container">
+                <h2 class="subtitle soy-marce__title">Soy Marce</h2>
+                <p class="soy-marce__textarea">Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere
+                    tristique. Phasellus placerat arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus.
+                    Integer
+                    ut iaculis augue, sit amet tincidunt ex. In eleifend justo et sodales semper. Mauris nec tortor
+                    lectus.
+                    Curabitur nec ultricies dolor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mis-servicios" class="mis-servicios">
+        <h2 class="subtitle mis-servicios__title">Mis servicios</h2>
+        <div class="cards">
+            <div class="cards__card">
+                <img src="/assets/icons/desktop.svg" alt="Icono de computadora" class="cards__card-img">
+                <h3 class="cards__card-title">Hago cosas</h3>
+                <p class="cards__card-text">Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                    Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.
+                </p>
+            </div>
+            <div class="cards__card">
+                <img src="/assets/icons/desktop.svg" alt="Icono de computadora" class="cards__card-img">
+                <h3 class="cards__card-title">y más cosas</h3>
+                <p class="cards__card-text">Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                    Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.
+                </p>
+            </div>
+            <div class="cards__card">
+                <img src="/assets/icons/desktop.svg" alt="Icono de computadora" class="cards__card-img">
+                <h3 class="cards__card-title">Y también otras cosas</h3>
+                <p class="cards__card-text">Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                    Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2 class="subtitle contacto__title">Escribime</h2>
+        <form action="" class="form">
+            <div class="form__fieldset">
+                <label class="form__label" for="">NOMBRE</label>
+                <input type="text" class="form__input">
+            </div>
+            <div class="form__fieldset">
+                <label class="form__label" for="">EMAIL</label>
+                <input type="text" class="form__input">
+            </div>
+            <div class="form__fieldset">
+                <label class="form__label" for="">Mensaje</label>
+                <textarea type="text" class="form__input form__input-textarea"></textarea>
+            </div>
+            <button class="btn form__btn">Enviar</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer__logo-copyright">
+            <img src="/assets/img/logo.svg" alt="Logotipo" class="logo">
+            <p class="footer__copyright">© 2025 Marce</p>
+        </div>
+        <ul class="footer__social">
+            <a href="#" class="footer__social-link">
+                <img class="footer__social-icon" src="/assets/icons/instagram.svg" alt="">
+                <p class="footer__social-title">Instagram</p>
+            </a>
+            <a href="#" class="footer__social-link">
+                <img class="footer__social-icon" src="/assets/icons/linkedin.svg" alt="">
+                <p class="footer__social-title">Linkedin</p>
+            </a>
+            <a href="#" class="footer__social-link">
+                <img class="footer__social-icon" src="/assets/icons/github.svg" alt="">
+                <p class="footer__social-title">Github</p>
+            </a>
+        </ul>
+    </footer>
+
+    <script>
+        // Look for .hamburger
+        function collpaseAndOpacity() {
+            backgroundOpacity.classList.toggle("disable");
+            navLinks.classList.toggle("collapse");
+
+        }
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+
+        let btnHamburger = document.querySelector(".nav__btn-hamburger");
+        let btnLink = document.querySelectorAll(".nav__link");
+        let backgroundOpacity = document.querySelector(".nav__background-opacity");
+        let navLinks = document.querySelector(".nav__links");
+
+        hamburger.addEventListener("click", function () {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+
+
+        btnHamburger.addEventListener("click", collpaseAndOpacity);
+
+        btnLink.forEach((elem, index) => {
+            elem.addEventListener("click", () => {
+                collpaseAndOpacity();
+                hamburger.classList.toggle("is-active");
+            })
+        })
+
+
+        let header = document.querySelector(".header");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 500) {
+                header.classList.add("background-active")
+            } else {
+                header.classList.remove("background-active")
+            }
+        })
+
+    </script>
+</body>
+
+</html>
