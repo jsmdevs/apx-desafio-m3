@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <script async src="./assets/js/scripts.js"></script>
     <title>Marce</title>
+    <meta name="description" content="Desafío m3 de apx">
 </head>
 
 <body>
@@ -90,16 +91,16 @@
         <h2 class="subtitle contacto__title">Escribime</h2>
         <form action="" class="form">
             <div class="form__fieldset">
-                <label class="form__label" for="">NOMBRE</label>
-                <input type="text" class="form__input">
+                <label for="name" class="form__label" for="">NOMBRE</label>
+                <input id="name" name="name" type="text" class="form__input">
             </div>
             <div class="form__fieldset">
-                <label class="form__label" for="">EMAIL</label>
-                <input type="text" class="form__input">
+                <label for="email" class="form__label" for="">EMAIL</label>
+                <input id="email" type="email" class="form__input">
             </div>
             <div class="form__fieldset">
-                <label class="form__label" for="">Mensaje</label>
-                <textarea type="text" class="form__input form__input-textarea"></textarea>
+                <label for="message" class="form__label" for="">Mensaje</label>
+                <textarea id="message" type="text" class="form__input form__input-textarea"></textarea>
             </div>
             <button class="btn form__btn">Enviar</button>
         </form>
@@ -110,22 +111,29 @@
             <p class="footer__copyright">© 2025 Marce</p>
         </div>
         <ul class="footer__social">
-            <a href="#" class="footer__social-link">
-                <img class="footer__social-icon" src="./assets/icons/instagram.svg" alt="">
-                <p class="footer__social-title">Instagram</p>
-            </a>
-            <a href="#" class="footer__social-link">
-                <img class="footer__social-icon" src="./assets/icons/linkedin.svg" alt="">
-                <p class="footer__social-title">Linkedin</p>
-            </a>
-            <a href="#" class="footer__social-link">
-                <img class="footer__social-icon" src="./assets/icons/github.svg" alt="">
-                <p class="footer__social-title">Github</p>
-            </a>
+            <li>
+                <a class="footer__social-link" href="https://www.instagram.com/" target="__blank"><img class="footer__social-icon"
+                        src="./assets/icons/instagram.svg" alt="">
+                    <p class="footer__social-title">Instagram</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/" class="footer__social-link" target="__blank">
+                    <img class="footer__social-icon" src="./assets/icons/linkedin.svg" alt="">
+                    <p class="footer__social-title">Linkedin</p>
+                </a>
+
+            </li>
+            <li>
+                <a href="https://github.com/" class="footer__social-link" target="__blank">
+                    <img class="footer__social-icon" src="./assets/icons/github.svg" alt="">
+                    <p class="footer__social-title">Github</p>
+                </a>
+            </li>
         </ul>
     </footer>
 
-    
+
 </body>
 
 </html>
